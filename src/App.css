@@ -1,0 +1,73 @@
+body{
+  background-image: url("https://img.freepik.com/premium-photo/abstract-blurred-gradient-nature-wallpaper-backgroundsoft-background-wallpaperdesigngraphic-presentation_532332-1414.jpg?w=900");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.qrcodegen-container
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.qrform
+{
+  width: 50%;
+  height: 100vh;
+display: flex;
+flex-direction: column;
+overflow-y: scroll;
+padding: 15px;
+box-sizing: border-box;
+}
+.qrimage
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.sketch-parent
+{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.sk-child
+{
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width:600px)
+{
+  .qrcodegen-container
+  {
+    flex-direction: column;
+  }
+  .qrform{
+    width: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+
+  }
+  .qrimage{
+    width: 100%;
+    height: 40vh;
+  }
+  .qrimgcls
+{
+  width: 175px;
+  height: 150px;
+  
+}
+}
